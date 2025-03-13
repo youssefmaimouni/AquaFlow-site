@@ -8,6 +8,9 @@ import { IconCloud } from "../components/magicui";
 import { InteractiveGridPattern } from "../components/interactive-grid-pattern";
 import Navbar from "../components/Navbar";
 import { FaWater, FaBell, FaChartLine, FaPlug, FaShieldAlt, FaMobileAlt } from "react-icons/fa";
+import videoFile from "../../public/istockphoto-1961001965-640_adpp_is.mp4";
+import waterLeak from "../../public/waterLeak1.png";
+
 
 
 const images = [
@@ -113,7 +116,7 @@ const Home = () => {
       >
          <video
         className="absolute z-0 top-0 left-0 h-screen w-full object-cover"
-        src="/istockphoto-1961001965-640_adpp_is.mp4" // Replace with the path to your video file
+        src={videoFile }// Replace with the path to your video file
         autoPlay
         loop
         muted
@@ -151,7 +154,7 @@ const Home = () => {
           </motion.div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex z-50">
             <motion.img
-              src="/waterLeak1.png"
+              src={waterLeak}
               alt="hero image"
               initial={{ opacity: 0 }}
               animate={{opacity:1}}

@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="p-4 flex flex-row items-center justify-between">
           <a
             href="/">
-          <img src="/logo1.png" alt="Logo" className='w-20' />
+          <img src="/AquaFlow-site/#/logo1.png" alt="Logo" className='w-20' />
           </a>
           <button
             className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
@@ -51,13 +51,13 @@ const Navbar = () => {
             Home
           </a>
            <a
-            href="/dashboard"
+            href="/AquaFlow-site/#/dashboard"
             className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
           >
             Dashboard
           </a>
            <a
-            href="/login"
+            href="/AquaFlow-site/#/login"
             className="px-4 py-2 mt-2 bg-white text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-900 dark:focus:bg-gray-900 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-500 focus:text-gray-500 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none focus:shadow-outline"
           >
             Login

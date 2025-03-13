@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NeuralNetworksAI from "./pages/NeuralNetworksAI";
 import './style.css';
@@ -12,15 +12,15 @@ import ProtectedRoute from "./components/ProtectedRoute"; // Import the Protecte
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/AquaFlow-site"> 
       <Routes>
         {/* Public Route without Layout */}
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<LoginForm />} />
+        <Route path="/AquaFlow-site/#/login" element={<LoginForm />} />
 
         {/* Protected Routes */}
         <Route
-          path="/dashboard"
+          path="/AquaFlow-site/dashboard"
           element={
             <ProtectedRoute>
               <DefaultLayout>
